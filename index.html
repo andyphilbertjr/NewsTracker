@@ -4,19 +4,11 @@
    <!-- <script src="/Users/owner/Desktop/Projects/techNewsProject/main.js"></script> -->
 </head>
 <body>
-    <script>
-        console.log("This is a test");
-        const newsApiKey = 'cccc3d27f6814d2ca10cffdc5236fa4e'; 
+    <div id="main">
         
-        var url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${newsApiKey}`
-        var req =  new Request(url)        
-        function newsSearch() {
-            fetch(req).then(response => {
-                console.log(response.json())
-            })
-        }
-
-newsSearch();    
+    </div>
+    
+    <script src="../index.js">
     </script>
 </body>
 </html>
