@@ -43,12 +43,12 @@ function newsSearch(){
           let linkElement = document.createElement('a')
           let pubElement = document.createElement('p')
           let displayContainer = articlesCont.appendChild(divElement)
-          
           let articleHeader = displayContainer.appendChild(headerElement).textContent = items.title
           let articleAuthor = displayContainer.appendChild(authorElement).textContent = items.author
           let articleDescription = displayContainer.appendChild(bodyElement).textContent = items.description
-          let articleBody = displayContainer.appendChild(linkElement).textContent = items.url
+          let articleUrl = displayContainer.appendChild(linkElement).textContent = items.url
           let articlePublishDate = displayContainer.appendChild(pubElement).textContent = items.published
+          linkElement.href = items.description
           
           
         }
